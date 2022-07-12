@@ -1,0 +1,58 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-image: url("background.jpeg");
+    background-size:100%;
+    color: white;
+    line-height: 43px;
+}
+
+.card{
+    margin-top: 120px;
+    background-color:#330000;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+    height: 500px;
+    opacity: 0.8;
+    padding: 60px 180px 20px 180px;
+}
+
+input{
+    outline: none;
+    height: 30px; 
+    width: 200px;
+    border-radius: 10px; 
+    font-size: 17px;
+}
+
+.button{
+    cursor: pointer;
+    border-radius: 30px;
+    float: right;
+    margin-top: 7px;
+}
+
+.weather{
+    align-items: center;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.logbutton {
+    cursor: pointer;
+    border-radius: 30px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
