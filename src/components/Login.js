@@ -1,10 +1,8 @@
 import React, { useState} from "react";
 import {useNavigate} from 'react-router-dom';
-import GeoLocation from "../GeoLocation";
 
 const Login = (handleData) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  GeoLocation();
 
   const submitHandle = (event) => {
     event.preventDefault();
