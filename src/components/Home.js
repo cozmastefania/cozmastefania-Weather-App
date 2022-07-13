@@ -1,7 +1,8 @@
-import GeoLocation from "./GeoLocation";
+import GeoLocation from "../GeoLocation";
 import { useNavigate } from "react-router-dom";
 
-const Home = (props) => {
+const Home = () => {
+  
   const loc = GeoLocation();
   console.log(loc);
   const name = loc.name;

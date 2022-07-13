@@ -6,8 +6,8 @@ const API_KEY = "&units=metric&appid=21cdf2fb10997f95ed4438541b1a3cdd";
 
 const GeoLocation = () => {
   const [data, setData] = useState();
-  const [lat, setLat] = useState(35.652832);
-  const [lng, setLng] = useState(139.839478);
+  const [lat, setLat] = useState('35.652832');
+  const [lng, setLng] = useState('139.839478');
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -20,7 +20,7 @@ const GeoLocation = () => {
         setData(response.data);
         console.log(response.data);
       });
-  },[]);
+  },[lat, lng]);
 
   return data;
 };

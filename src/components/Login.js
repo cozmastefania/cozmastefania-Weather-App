@@ -1,8 +1,10 @@
 import React, { useState} from "react";
 import {useNavigate} from 'react-router-dom';
+import GeoLocation from "../GeoLocation";
 
 const Login = (handleData) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  GeoLocation();
 
   const submitHandle = (event) => {
     event.preventDefault();
@@ -21,7 +23,7 @@ const Login = (handleData) => {
       <form onSubmit={submitHandle}>
         <label> Email: </label>
         <input type="email" required />
-        <div className="logbutton" onClick={data=>handleData(data)}>
+        <div className="logbutton">
           <input type="submit"
           onClick={redirectHandle}/>
         </div>
