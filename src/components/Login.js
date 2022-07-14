@@ -21,7 +21,7 @@ const Login = (handleData) => {
       <form onSubmit={submitHandle}>
         <label> Email: </label>
         <input type="email" required />
-        <div className="logbutton" onClick={data=>handleData(data)}>
+        <div className="logbutton">
           <input type="submit"
           onClick={redirectHandle}/>
         </div>
